@@ -1,0 +1,82 @@
+{% extends "base.html" %}
+
+{% block Navbar %}
+  <td>
+    <a class="e2" href="/login">Login</a>
+  </td>
+{% endblock%}
+
+{% block cont %}
+  <body>
+    <div class="box">
+      <h3>Signup</h3>
+        <form method="post">
+          <div class="input_box">
+            <input type="text" name="username" value="{{ username }}"  required="">
+
+              <label>
+                <div id="uname">
+                  Username
+                </div>
+              </label>  
+
+              <div id="error">
+                {{ usernameerror }} 
+              </div>  
+
+          </div>
+
+          <div class="input_box">
+            <input type="password" name="password" value="{{ password }}"  required=""> 
+
+              <label>
+                <div id="uname">
+                  Password
+                </div>
+              </label>  
+
+              <div id="error">
+                {{ passworderror }} 
+              </div>  
+
+          </div>
+
+          <div class="input_box">
+            <input type="password" name="verify" value="{{ verify }}"  required="">
+
+              <label>
+                <div id="uname">
+                  Password again
+                </div>
+              </label>
+
+              <div id="error">
+                {{ verifyerror }} 
+              </div>  
+
+          </div>
+
+          <div class="input_box">
+            <input type="text" name="email" value="{{ email }}" > 
+
+              <label>
+                <div id="uname">
+                  Email(optional)
+                </div>
+              </label>
+
+              <div id="error">
+                {{ emailerror }} 
+              </div>  
+
+          </div>
+
+              <input type="submit" value="Submit" name="" >
+
+        </form>
+    </div>
+  </body>
+
+{% endblock %}
+
+  

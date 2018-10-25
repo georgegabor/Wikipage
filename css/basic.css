@@ -1,0 +1,146 @@
+/**************** HTML tags first  *************/
+
+html{   min-width: 20rem;
+        overflow-y: scroll;
+        height: 100vh;
+        line-height: 1.6;
+        margin: 0;
+        font-size: 0.7em;
+        background-color: lightgrey;}
+body{   width: 100%;
+        margin: 0px;
+        padding: 0px;
+        background-color: lightgrey;
+        background-repeat: no-repeat;
+        background-position: 100% 15%;
+        background-size: cover;}
+table{  display: table;
+        border-collapse: separate;
+        border-spacing: 2px;
+        border-color: grey;}
+td{ width: 20%;}        
+form div{position: relative;}
+/*p{margin: 10px;}*/
+textarea{   width: 100%;
+            min-height: 30em;}
+p{  float:right;
+    color: red;
+    margin-right: 2em;}            
+hr{ margin: 10px;
+    color: gray;
+    width: 85%;}
+footer{ margin: 5px;
+        padding: 5px;
+        text-align: center; }
+a{  color: white;
+    text-decoration: none;
+    cursor: pointer;}
+a:hover{color: red;
+        transition: .5s linear;}        
+input:hover{background-color: darkgrey;
+            outline: none;
+            cursor: pointer;}
+
+/**************** Table *************/
+.a1{float: left;}
+.a1:hover{  color: white;
+            transition: .75s linear;}
+.a{ margin: 0 auto;
+    background-color: #000000;}
+.b{ margin: 0 auto;
+    background-color: #000000;}
+.d{ margin: 0 auto;
+    color: #878787;}
+.h{ table-layout: fixed;
+    width: 100%;
+    text-align: center;
+    line-height: 1.5;
+    font-family: c;
+    color: #878787;}
+.e1{display: block;
+    outline: none;
+    border-right: thin solid #ffffff;
+    font-size: 1.2em;
+    padding: 1.5em;}
+.e2{display: block;
+    outline: none;
+    font-size: 1.2em;
+    padding: 1.5em;}
+
+
+/**************** BOX *************/
+
+.box{   position: absolute;
+        top: 55%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        width: 40%;
+        padding: 15px;
+        background: rgba(0,0,0,.8);
+        box-sizing: border-box;
+        box-shadow: 0 15px 25px rgba(0,0,0,.3);
+        border-radius: 10px;}
+.box .input_box input{  width: 60%;
+                        padding: 10px 0;
+                        font-size: 10px;
+                        color: #fff;
+                        letter-spacing: 1px;
+                        margin-bottom: 30px;
+                        border: none;
+                        border-bottom: 1px solid;
+                        outline: none;
+                        background: transparent;}
+.box .input_box #error{ float: right;
+                        margin-right: 2%;
+                        margin-top: 2%;    
+                        color: red;
+                        font-size: 1em;
+                        transition: none;}
+.box .input_box label{  position: absolute;
+                        top: 0;
+                        left: 0;
+                        padding: 10px 0;
+                        font-size: 12px;
+                        color: #fff;
+                        letter-spacing: 1px;
+                        pointer-events: none;
+                        /*transition: .5s;*/}
+.box .input_box label #uname{transition: .5s}                        
+.box .input_box input:focus ~ label #uname,
+.box .input_box input:valid ~ label #uname{ top: -18px;
+                                            left: 0;
+                                            color: #03a9f4;
+                                            font-size: 10px;}
+.box input[type="submit"]{  background: transparent;
+                            border: none;
+                            outline: none;
+                            color: #fff;
+                            background: #03a9f4;
+                            padding: 10px 20px;
+                            cursor: pointer;
+                            border-radius: 5px;
+                            position: relative;
+                            left: 30%;}
+.box h3{margin: 0 0 30px;
+        padding: 0;
+        color: #fff;
+        text-align: center;}
+
+/**************** Others *************/
+
+.submit {   padding: .5em;
+            text-align: center;
+            margin: .5em;}
+.textarea{margin: 1em;}
+.form{  width: 60%;
+        margin: 0;}
+.editform{padding: 1em;}        
+.replace{margin: 20px 20px 20px 20px;}
+.a1{color: #55a5f5;
+    text-decoration: none;
+    font-family: 'Spirax', cursive;
+    font-size: 5rem;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;}
+.content-all{padding:  5em;}
+.content{   margin: 1em;
+            font-size: 1.5em;}            

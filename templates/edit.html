@@ -1,0 +1,29 @@
+{% extends "base.html" %}
+
+{% block Navbar %}
+	<td>
+		<a class="e1" href={{URL}}>View</a>	
+	</td>
+	<td>
+		<a class="e1" href="/_history{{URL}}">History</a>
+	</td>
+	<td>
+		<a class="e2" href="/logout">{{ User }} &nbsp;&nbsp;&nbsp; Logout</a>
+	</td>
+{% endblock%}
+
+{% block cont %}	
+	<body>	
+		<div class="form">
+			<form  class="editform" method="post">		
+				<div class="textarea">
+					<textarea  name="content">{% for c in contents %}{{ c.contents }}
+					{% endfor %}</textarea>
+				</div>
+				<div class="submit">
+					<input type="submit" value="Send it !">
+				</div>
+			</form>
+		</div>
+	</body>		
+{% endblock %}		

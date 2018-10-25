@@ -1,0 +1,37 @@
+{% extends "base.html" %}
+
+{% block Navbar %}
+	{% if User%}
+		<td>
+			<a class="e1" href={{URL}}>View</a>	
+		</td>
+		<td>
+			<a class="e1" href="/_edit{{URL}}">Edit</a>	
+		</td>
+		<td>
+			<a class="e2" href="/logout">{{ User }} &nbsp;&nbsp;&nbsp; Logout</a>
+		</td>
+	{% else %}
+		<td>
+			<a class="e1" href={{URL}}>View</a>	
+		</td>
+		<td>
+			<a class="e1" href="/login">Login</a>
+		</td>
+		<td>
+			<a class="e2" href="/signup">Signup</a>
+		</td>
+	{% endif %}
+{% endblock %}
+
+{% block cont %}
+	<div class="content-all">					
+		{% for content in contents %}
+						<div class="content">
+								{{ content.created.strftime('%Y-%m-%d %H:%M %a') }}
+								&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+								{{ content.contents }}
+						</div>
+		{% endfor %}
+	</div>
+{% endblock %}
